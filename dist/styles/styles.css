@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+  background-color: #5D4945;
+}
+
+.logo {
+  color: #d8d0d0;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #d8d0d0;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  margin: 5px;
+  background-color: #d8d0d0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#home {
+  height: 92vh;
+  width: 100%;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide .slide-content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 500px;
+  background-color: #d8d0d0;
+  color: #5D4945;
+  padding: 30px;
+}
+
+.slide .slide-content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide.current .slide-content {
+  opacity: 1;
+  -webkit-transform: translateX(600px);
+          transform: translateX(600px);
+  -webkit-transition: all 0.7s ease-in-out 0.3s;
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.slide:first-child {
+  background: url("/dist/img/img1.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.slide:nth-child(2) {
+  background: url("/dist/img/img2.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.slide:nth-child(3) {
+  background: url("/dist/img/img3.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.slide:nth-child(4) {
+  background: url("/dist/img/img4.jpg") no-repeat center;
+}
+
+.slide:nth-child(5) {
+  background: url("/dist/img/img5.jpg") no-repeat center;
+}
+
+.slide-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: white;
+}
+
+.slide-content.slide2 li {
+  list-style: none;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  color: #5D4945;
+  border: 2px solid #5D4945;
+  border-radius: 50%;
+}
+
+.arrow:hover {
+  background-color: #5D4945;
+  color: #d8d0d0;
+}
+
+#prev {
+  left: 0;
+  margin-left: 30px;
+}
+
+#next {
+  right: 0;
+  margin-right: 30px;
+}
+
+#video {
+  height: 100vh;
+  margin-top: 6px;
+}
+
+.video-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.video-container {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  height: 100%;
+  margin: 3px;
+}
+
+.video-list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+  background-color: #5D4945;
+  color: #d8d0d0;
+  width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #5D4945;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+/*# sourceMappingURL=styles.css.map */
