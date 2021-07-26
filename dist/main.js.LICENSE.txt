@@ -1,3 +1,25 @@
+/*!
+ * Programatically add the following
+ */
+
+/*! @name @videojs/http-streaming @version 2.9.1 @license Apache-2.0 */
+
+/*! @name aes-decrypter @version 3.1.2 @license Apache-2.0 */
+
+/*! @name m3u8-parser @version 4.7.0 @license Apache-2.0 */
+
+/*! @name mpd-parser @version 0.17.0 @license Apache-2.0 */
+
+/*! @name pkcs7 @version 1.0.4 @license Apache-2.0 */
+
+/**
+   * @license
+   * slighly modified parse-headers 2.0.2 <https://github.com/kesla/parse-headers/>
+   * Copyright (c) 2014 David Björklund
+   * Available under the MIT license
+   * <https://github.com/kesla/parse-headers/blob/master/LICENCE>
+   */
+
 /**
  * @license
  * Lodash <https://lodash.com/>
@@ -5,4 +27,16 @@
  * Released under MIT license <https://lodash.com/license>
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */
+
+/**
+ * @license
+ * Video.js 7.13.3 <http://videojs.com/>
+ * Copyright Brightcove, Inc. <https://www.brightcove.com/>
+ * Available under Apache License Version 2.0
+ * <https://github.com/videojs/video.js/blob/main/LICENSE>
+ *
+ * Includes vtt.js <https://github.com/mozilla/vtt.js>
+ * Available under Apache License Version 2.0
+ * <https://github.com/mozilla/vtt.js/blob/main/LICENSE>
  */
