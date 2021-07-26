@@ -13,5 +13,9 @@
     "lodash": "^4.17.21",
     "video.js": "^7.13.3",
     "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "videojs-playlist": "^4.3.1",
+    "videojs-youtube": "^2.6.1"
   }
 }
