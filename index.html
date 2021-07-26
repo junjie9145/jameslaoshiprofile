@@ -6,7 +6,7 @@
     <title>James Neal Teacher Profile</title>
     <link rel="stylesheet" href="/dist/styles/styles.css">
     <link rel="stylesheet" href="/styles/styles.css">
-    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="../node_modules/video.js/dist/video-js.css" />
     <script src="https://kit.fontawesome.com/95a40a0240.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -66,17 +66,21 @@
                     <button id="next" class="arrow"><i class="fa fa-arrow-right"></i></button>
         </section>
         <section id="video">
-            <div class="video-wrap">
-                <div class="video-container">
-                    <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/33559ea7ef304d65858ffdae7b09edfd" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+                <div id="current-video" class="current">
+                    <video
+                        class="video-js vjs-defautl-skin vjs-big-play-centered vjs-fill"
+                        controls
+                        data-setup='{"techOrder": ["youtube"]  "sources": [{ "type": "video/youtube", "src": ""}]}'></video>
                 </div>
-                <div class="video-list"></div>
-            </div>
         </section>
     </main>
     <footer>
         <p>&copy; James Neal 2021</p>
     </footer>
+
+    <script src="../node_modules/video.js/dist/video.js"></script>
+    <script src="../node_modules/videojs-playlist/dist/videojs-playlist.js"></script>
+    <script src="../dist/Youtube.js"></script>
 </body>
 <script src="main.js"></script>
 </html>
